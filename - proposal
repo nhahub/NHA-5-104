@@ -1,0 +1,38 @@
+# Job Market Analysis - Project Proposal
+
+## 1. Project Name & Overview
+* **Project Name:** Job Market Analysis
+* **Track:** Professional Data Analyst Track, Digital Egypt Pioneers Initiative (DEPI)
+* **Objective:** Design and deliver an end-to-end Job Market Intelligence solution transforming a 17-field job-postings dataset into evidence-based insights regarding role demand, skill requirements, advertised salaries (annual/hourly), remote patterns, and hiring trends over time.
+* **Primary Audience:** Job seekers and career changers targeting data-related roles.
+* **Secondary Audiences:** Training providers, career advisors, and recruiters.
+
+---
+
+## 2. Dataset & Scope
+* **Dataset Schema (17 Fields):** `job_title_short`, `job_title`, `job_location`, `job_via`, `job_schedule_type`, `job_work_from_home`, `search_location`, `job_posted_date`, `job_no_degree_mention`, `job_health_insurance`, `job_country`, `salary_rate`, `salary_year_avg`, `salary_hour_avg`, `company_name`, `job_skills`, `job_type_skills`.
+* **Core Business Questions:**
+  1. Which roles (`job_title_short`) have the highest posting volume?
+  2. Which skills are most frequently requested for each role?
+  3. Which skills commonly appear together, and how does this differ by role?
+  4. How do advertised annual and hourly salaries vary by role, country, schedule type, and employer?
+  5. What share of postings disclose salary, and how does this affect reliability?
+  6. How does posting volume change over time using comparable periods?
+  7. How do remote indicators, schedule types, degree requirements, and health insurance mentions vary across roles and countries?
+
+---
+
+## 3. Team Members & Responsibilities
+* **Momen Salem Hussein (Team Leader):** Project Manager & QA Lead (Planning, milestone tracking, KPI dictionary, validation/reconciliation, repository setup, Executive Overview & Data Quality pages).
+* **Shehab Talaat Ismail (Week 1 Lead):** Data Engineer (Source documentation, data profiling, Bronze/Silver/Gold SQL Server layers, T-SQL load scripts, Job Demand & Trends pages).
+* **Haneen Mohamed Gaber (Week 2 Lead):** Skills & Data Quality Analyst (Data quality audit, cleaning, standardization, skill parsing, co-occurrence analysis, Skills Intelligence pages).
+* **Jowairya Mohamed Fahmy (Week 3 Lead):** Salary & Forecasting Analyst (Salary validation, distribution analysis, forecasting models, regression association, Salary Analysis pages).
+* **Shaza Emad Mahmoud (Week 4 Lead):** BI & Documentation Lead (Data dictionary, exclusion log, wireframes, visual design standards, Work & Posting Attributes pages, presentation).
+
+---
+
+## 4. 4-Week Implementation Plan
+* **Week 1 (Scoping, Data Model & Cleaning):** Data auditing, schema design (star schema with Bronze/Silver/Gold layers in SQL Server 2022), cleaning rules, and dataset freezing.
+* **Week 2 (Demand, Skills & Salary Analysis):** Requirements matrix definition, exploratory analysis via Python and SQL, KPI finalization, and validation totals.
+* **Week 3 (Forecasting & Trends):** Time-series aggregation, seasonal-naive/moving average/exponential smoothing forecasting models, salary association regression, and SQL dashboard views.
+* **Week 4 (Dashboards, Report & Presentation):** Cross-tool dashboard builds in Tableau and Power BI, reconciliation checks, peer review, final report compilation, and GitHub repository polish.
